@@ -1,9 +1,9 @@
-const potato = "stuff";
+var potato = "stuff";
 
-const fries = "stuff";
+var fries = "stuff";
 
-const bigPotato = "more stuff";
+var bigPotato = "more stuff";
 
-const ILikeToast = "notPotato";
+var ILikeToast = "notPotato";
 
-const michael = "mydad";
+var michael = "mydad";
