@@ -1,3 +1,5 @@
 const potato = "stuff";
 
-also stuff
+const fries = "stuff";
+
+const bigPotato = "more stuff";
