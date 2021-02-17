@@ -1,4 +1,2 @@
-
-DROP DATABASE IF EXISTS bookly;
--- Creates the "blogger" database --
-CREATE DATABASE bookly;
+DROP DATABASE IF EXISTS bookly_db;
+CREATE DATABASE bookly_db;

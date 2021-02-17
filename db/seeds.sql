@@ -1,8 +1,12 @@
-use cat_db
+use bookly_db
 
-INSERT INTO cats (name) VALUES ('Molly');
-INSERT INTO cats (name) VALUES ('Charlie');
-INSERT INTO cats (name, sleepy) VALUES ('Poppy', true);
-INSERT INTO cats (name, sleepy) VALUES ('Oscar', true);
-INSERT INTO cats (name, sleepy) VALUES ('Smudge', true);
-INSERT INTO cats (name) VALUES ('Daisy');
+INSERT INTO booktable (title , author, userRating, readingStatus, category, comments) 
+VALUES 
+    ("Harry Harry Potter and the Sorcerer's", "J.K. Rowling", "Awesome", "Read", "Fantasie", "Must read next one"),
+    ("Harry Potter and the Chamber of Secrets", "J.K. Rowling", "Awesome", "Read", "Fantasie", "Must read next one"),
+    ("Harry Potter and the Prisoner of Azkaban", "J.K. Rowling", "Awesome", "Reading", "Fantasie", "Scary"),
+    ("Harry Potter and the Goblet of Fire", "J.K. Rowling", "Unkown", "On List", "Fantasie", " "),
+    ("Harry Potter and the Order of the Phoenix", "J.K. Rowling", "Unkown", "On List", "Fantasie", " ");
+
+
+
