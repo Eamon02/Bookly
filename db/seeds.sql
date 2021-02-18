@@ -1,6 +1,6 @@
 use bookly_db
 
-INSERT INTO booktable (title , author, userRating, readingStatus, category, comments) 
+INSERT INTO booktable (title , author_id, userRating_id, readingStatus, category_id, comments) 
 VALUES 
     ("Harry Harry Potter and the Sorcerer's", "J.K. Rowling", "Awesome", "Read", "Fantasie", "Must read next one"),
     ("Harry Potter and the Chamber of Secrets", "J.K. Rowling", "Awesome", "Read", "Fantasie", "Must read next one"),
