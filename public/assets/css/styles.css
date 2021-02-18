@@ -1,0 +1,51 @@
+body {
+  /* width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: black;
+  overflow: hidden;
+  display: flex; */
+  /* justify-content: center; */
+  align-items: center;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.title-box {
+  margin: 30px;
+}
+.buttonRow{
+  margin-bottom: 5px !important;
+  padding-bottom: 0;
+  text-align: center;
+}
+button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  word-spacing: normal;
+  letter-spacing: 5px;
+  border: 1px solid white;
+  /* background: black; */
+  cursor: pointer;
+  border-radius: 10%;
+}
+#mainCard{
+  margin-top: 0px;
+  border-radius: 10px;
+  background: rgba(163, 163, 163, 0.24);
+  border: 1px solid white;
+}
+/* .button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-direction: row;
+} */
