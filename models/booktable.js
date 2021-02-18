@@ -34,29 +34,8 @@ module.exports = (sequelize, DataTypes) => {
         onDelete: "cascade",
       });
     };
-    bookTable.associate = (models) => {
-      // Associating Author with Posts
-      // When an Author is deleted, also delete any associated Posts
-      bookTable.belongsTo(models.description, {
-        onDelete: "cascade",
-      });
-    };
-    bookTable.associate = (models) => {
-      // Associating Author with Posts
-      // When an Author is deleted, also delete any associated Posts
-      bookTable.belongsTo(models.userRating, {
-        onDelete: "cascade",
-      });
-    };
-    bookTable.associate = (models) => {
-      // Associating Author with Posts
-      // When an Author is deleted, also delete any associated Posts
-      bookTable.belongsTo(models.readingStatus, {
-        onDelete: "cascade",
-      });
-    };
+    
  
-
     bookTable.sync();
   
     return bookTable;
