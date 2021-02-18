@@ -1,23 +1,16 @@
-// Set up MySQL connection.
-const mysql = require("mysql");
+const Sequelize = require('sequelize');
 
-const connection = mysql.createConnection({
-  host: "localhost",
+
+const sequelize = new Sequelize('bookly_db', 'root', '', {
+  host: 'localhost',
   port: 3306,
-  user: "root",
-  // NOTE: Be sure to add your MySQL password here!
-  password: "root",
-  database: "bookly_db",
+  dialect: 'mysql',
+  pool: {
+    max: 5,
+    min: 0,
+    idle: 10000,
+  },
 });
 
-// Make connection.
-connection.connect((err) => {
-  if (err) {
-    console.error(`error connecting: ${err.stack}`);
-    return;
-  }
-  console.log(`connected as id ${connection.threadId}`);
-});
 
-// Export connection for our ORM to use.
-module.exports = connection;
+module.exports = sequelize;
