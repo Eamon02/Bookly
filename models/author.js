@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
 
-    const author = sequelize.define("Author", {
+    const author = sequelize.define("author", {
       // Giving the Author model a name of type STRING
       author: {
         allowNull: false,
@@ -8,15 +8,15 @@ module.exports = (sequelize, DataTypes) => {
       bio: DataTypes.STRING,
     });
   
-    author.associate = (models) => {
+    // author.associate = (models) => {
       
-      // Associating Author with bookTable
-      // When an Author is deleted, also delete any associated Posts & add new authors to table
-      author.hasMany(models.BookTable, {
-        onDelete: "cascade",
-        onUpdate: "cascade",
-      });
-    };
+    //   // Associating Author with bookTable
+    //   // When an Author is deleted, also delete any associated Posts & add new authors to table
+    //   author.hasMany(models.book_table, {
+    //     onDelete: "cascade",
+    //     onUpdate: "cascade",
+    //   });
+    // };
   
     return author;
   };
