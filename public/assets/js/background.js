@@ -28,7 +28,7 @@ function init() {
     pageGeo.vertices.push(page);
   }
 
-  let pageSprite = new THREE.TextureLoader().load("book.png");
+  let pageSprite = new THREE.TextureLoader().load("../photos/book.png");
 
   let pageMaterial = new THREE.PointsMaterial({
     color: 0xaaaaaa,
@@ -38,7 +38,7 @@ function init() {
 
   pages = new THREE.Points(pageGeo, pageMaterial);
 
-  // scene.add(stars);
+  scene.add(stars);
   scene.add(pages);
 
   window.addEventListener("resize", onWindowResize, false);
