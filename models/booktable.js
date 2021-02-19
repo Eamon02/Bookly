@@ -30,7 +30,7 @@ module.exports = (sequelize, DataTypes) => {
     bookTable.associate = (models) => {
       // Associating Author with Posts
       // When an Author is deleted, also delete any associated Posts
-      bookTable.belongsTo(models.author, {
+      bookTable.belongsTo(models.Author, {
         onDelete: "cascade",
       });
     };
