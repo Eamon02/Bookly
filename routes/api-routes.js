@@ -20,3 +20,6 @@ module.exports = function (app) {
     }).then((dbAuthor) => res.json(dbAuthor));
   });
 };
+module.exports = function (app) {};
+
+///
