@@ -22,26 +22,24 @@
 //   console.log(`Server listening on: http://localhost:${PORT}`)
 // );
 
-
-
-const express = require('express');
+const express = require("express");
 
 // Sets up the Express App
 const app = express();
 const PORT = process.env.PORT || 8080;
 
 // // Requiring our models for syncing
-const db = require('./models');
+const db = require("./models");
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Static directory
-app.use(express.static('public'));
+app.use(express.static("public"));
 
-const htmlRouter = require('./routes/html-routes.js');
-const apiRouter = require('./routes/api-routes.js');
+const htmlRouter = require("./routes/html-routes.js");
+const apiRouter = require("./routes/api-routes.js");
 
 // Invoke routes
 htmlRouter(app);
@@ -50,7 +48,5 @@ apiRouter(app);
 
 // Syncing our sequelize models and then starting our Express app
 db.sequelize.sync().then(() => {
-    app.listen(PORT, () => console.log(`Listening on PORT ${PORT}`));
+  app.listen(PORT, () => console.log(`Listening on PORT ${PORT}`));
 });
-
-
