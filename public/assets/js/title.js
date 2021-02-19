@@ -10,21 +10,3 @@ var animate = anime({
   loop: false,
   autoplay: true,
 });
-
-// $("#title").on("click", t);
-
-// let play = false;
-// function t() {
-//   if (!play) {
-//     $("#title").on("click", (animation.loop = true));
-//   } else {
-//     $("#title").on("click", (animation.loop = false));
-//   }
-//   play = !play;
-// }
-
-function init() {
-  console.log(animate.loop);
-}
-
-$("#mainCard").on("click",console.log("potato"));
