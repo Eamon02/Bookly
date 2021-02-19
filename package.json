@@ -6,15 +6,9 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.1",
-<<<<<<< HEAD
     "handlebars": "^4.7.7",
     "mysql": "^2.18.1",
     "node": "^15.8.0"
-=======
-    "mysql": "^2.18.1",
-    "mysql2": "^2.2.5",
-    "sequelize": "^6.5.0"
->>>>>>> c7b8e33075df5bb7796830fefabbb18c9648ad66
   },
   "devDependencies": {
     "eslint": "^7.19.0",
