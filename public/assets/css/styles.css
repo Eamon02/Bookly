@@ -31,6 +31,6 @@ button {
 #mainCard{
   margin-top: 0px;
   border-radius: 10px;
-  background: rgba(163, 163, 163, 0.24);
+  background: rgb(163, 163, 163);
   border: 1px solid white;
 }
