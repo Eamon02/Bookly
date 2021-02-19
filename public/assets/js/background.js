@@ -28,7 +28,7 @@ function init() {
     pageGeo.vertices.push(page);
   }
 
-  let pageSprite = new THREE.TextureLoader().load("../photos/book.png");
+  let pageSprite = new THREE.TextureLoader().load("../images/book.png");
 
   let pageMaterial = new THREE.PointsMaterial({
     color: 0xaaaaaa,
