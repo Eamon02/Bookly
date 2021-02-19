@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const bookTable = sequelize.define("BookTable", {
+    const bookTable = sequelize.define("book_table", {
       // Giving the Book Table model a name of type STRING
       title: {
         allowNull: false,
@@ -9,11 +9,11 @@ module.exports = (sequelize, DataTypes) => {
        allowNull: false,
        type: DataTypes.STRING
      },
-     userRating:{
+     user_rating:{
        allowNull: true,
        type:DataTypes.STRING
      },
-     readingStatus: {
+     reading_status: {
       allowNull: false,
       type: DataTypes.STRING
     },
@@ -23,13 +23,14 @@ module.exports = (sequelize, DataTypes) => {
     },
     });
   
-    bookTable.associate = (models) => {
-      // Associating Author with Posts
-      // When an Author is deleted, also delete any associated Posts
-      bookTable.belongsTo(models.Author, {
-        onDelete: "cascade",
-      });
-    };
+    //no longer using comment section
+    // book_table.associate = (models) => {
+    //   // Associating Author with Posts
+    //   // When an Author is deleted, also delete any associated Posts
+    //   bookTable.belongsTo(models.Author, {
+    //     onDelete: "cascade",
+    //   });
+    // };
     
  
     bookTable.sync();
