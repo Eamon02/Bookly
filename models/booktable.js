@@ -9,10 +9,6 @@ module.exports = (sequelize, DataTypes) => {
        allowNull: false,
        type: DataTypes.STRING
      },
-     description: {
-       allowNull: false,
-       type: DataTypes.STRING
-     },
      userRating:{
        allowNull: true,
        type:DataTypes.STRING

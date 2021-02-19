@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
       // When an Author is deleted, also delete any associated Posts & add new authors to table
       author.hasMany(models.BookTable, {
         onDelete: "cascade",
-        // onUpdate: "cascade",
+        onUpdate: "cascade",
       });
     };
   
