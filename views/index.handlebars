@@ -1,28 +1,23 @@
-{{!-- <table class="highlight">
+<table class="highlight">
         <thead>
           <tr>
               <th>Title</th>
               <th>Author</th>
               <th>Rating</th>
-              <th>Status</th>
               <th>Category</th>
+              <th></th>
           </tr>
         </thead>
 
         <tbody>
+          {{#each books}}
           <tr>
-            <td>Alvin</td>
-            <td>Eclair</td>
-            <td>10/10</td>
-            <td>$0.87</td>
-            <td>$0.87</td>
+            <td>{{this.dataValues.title}}</td>
+            <td>{{this.dataValues.author}}</td>
+            <td>{{this.dataValues.user_rating}}</td>
+            <td>{{this.dataValues.category}}</td>
+            <td> <a class="waves-effect waves-cyan btn btn-flat">Delete</a></td>
           </tr>
+          {{/each}}
         </tbody>
-      </table> --}}
-
-<ul>
-  potato
-  {{#each books}}
-  <div>{{this.dataValues.title}}</div>
-  {{/each}}
-</ul>
+      </table>
