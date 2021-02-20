@@ -13,7 +13,7 @@ module.exports = function(app) {
 
       app.get('/api/book/:title', (req, res) => {
         
-        db.Author.findOne({
+        db.booktable.findOne({
           where: {
             title: req.params.title,
           },

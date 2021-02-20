@@ -5,10 +5,6 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         type: DataTypes.STRING,
       },
-     author: {
-       allowNull: false,
-       type: DataTypes.STRING
-     },
      userRating:{
        allowNull: true,
        type:DataTypes.STRING
@@ -20,16 +16,17 @@ module.exports = (sequelize, DataTypes) => {
     category: {
       allowNull: false,
       type: DataTypes.STRING
-    },
+    }
     });
   
-    // booktable.associate = (models) => {
-    //   // Associating Author with Posts
-    //   // When an Author is deleted, also delete any associated Posts
-    //   booktable.belongsTo(models.author, {
-    //     onDelete: "cascade",
-    //   });
-    // };
+    booktable.associate = (models) => {
+      // Associating Author with Posts
+      // When an Author is deleted, also delete any associated Posts
+      booktable.belongsTo(models.author, {
+        foreignKey: "author_id"
+        // onDelete: "cascade"
+      });
+    };
     
  
     booktable.sync();

@@ -4,7 +4,8 @@ module.exports = (sequelize, DataTypes) => {
       // Giving the Author model a name of type STRING
       author: {
         allowNull: false,
-        type: DataTypes.STRING},
+        type: DataTypes.STRING
+      },
       bio: DataTypes.STRING,
     });
   
@@ -13,8 +14,7 @@ module.exports = (sequelize, DataTypes) => {
       // Associating Author with bookTable
       // When an Author is deleted, also delete any associated Posts & add new authors to table
       author.hasMany(models.booktable, {
-        onDelete: "cascade",
-        onUpdate: "cascade",
+        // onDelete: "cascade"
       });
     };
   
