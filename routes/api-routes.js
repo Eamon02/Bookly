@@ -15,26 +15,6 @@ module.exports = function (app) {
       .then((booktitle) => res.json(booktitle));
   });
 
-
-// app.post('/api/books', (req, res) => {
-//   db.booktable.create({
-//     title: req.body.title,
-//     author: req.body.author,
-//     user_rating: req.body.user_rating,
-//     reading_status: req.body.reading_status,
-//     category: req.body.category,
-//   }).then((dbbooktable) => res.json(dbbooktable));
-// });
-
-// app.delete('/api/books/:title', (req, res) => {
-  
-//   db.booktable.destroy({
-//     where: {
-//       title: req.params.title,
-//     },
-//   }).then((dbbooktable) => res.json(dbbooktable));
-// });
-
   app.get("/api/read/:reading_status", (req, res) => {
     db.booktable
       .findOne({
@@ -45,7 +25,17 @@ module.exports = function (app) {
       .then((bookread) => res.json(bookread));
   });
 
-// module.exports = function (app) {};
+  app.post("/api/books", (req, res) => {
+    db.booktable
+      .create({
+        title: req.body.title,
+        author: req.body.author,
+        user_rating: req.body.user_rating,
+        reading_status: req.body.reading_status,
+        category: req.body.category,
+      })
+      .then((bookadd) => res.json(bookadd));
+  });
 
   app.delete("/api/books/: title", (req, res) => {
     db.booktable
