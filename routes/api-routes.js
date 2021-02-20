@@ -15,7 +15,7 @@ module.exports = function (app) {
   });
 };
 
-app.post('/api/books', (req, res) => {
+// app.post('/api/books', (req, res) => {
 //   db.booktable.create({
 //     title: req.body.title,
 //     author: req.body.author,
