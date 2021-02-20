@@ -6,19 +6,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Create an author
   const insertBook = (bookData) => {
-    fetch("/api/books", {
+    // console.log(bookData);
+    // fetch("/api/books", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: bookData,
+    // })
+    //   .then(getBooks => {
+    //     console.log(getBooks);
+    //   })
+    //   .catch((err) => console.error(err));
+    $.ajax({
+      url: "/api/books",
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(bookData),
+      data: bookData,
     })
-      .then(getBooks)
-      .catch((err) => console.error(err));
+    .then(response =>{
+      console.log(response);
+    })
+    .catch((err) => console.error(err));
   };
+  $("#addBtn").on("click", async e => {
+    e.preventDefault();
+    const bookData = {
+      title: $("#booktitle").val(),
+      author: $("#author").val(),
+      user_rating: $("#rating").val(),
+      reading_status: $("#status").val(),
+      category: $("#category").val(),
+    };
+    await insertBook(bookData);
+    window.location.reload();
+  });
 });
 
-// // A function for deleting a note from the db
+
+// A function for deleting a note from the db
 // const deleteBook = (id) => {
 //   return $.ajax({
 //     url: "api/books/" + id,
