@@ -1,28 +1,4 @@
-<<<<<<< HEAD
-const express = require('express');
-=======
-// const express = require("express");
-// const PORT = process.env.PORT || 8080;
-// const app = express();
-
-// app.use(express.static("public"));
-// app.use(express.urlencoded({ extended: true }));
-// app.use(express.json());
-
-
-// const apirouter = require("./routes/api-routes.js");
-// const htmlrouter = require("./routes/html-routes.js");
-
-// app.use(apirouter)
-// app.use(htmlrouter)
-
-// // Start our server so that it can begin listening to client requests.
-// app.listen(PORT, () =>
-//   console.log(`Server listening on: http://localhost:${PORT}`)
-// );
-
 const express = require("express");
->>>>>>> 97069b78a4585c2d373f1da62e8c2f62cd3aa198
 
 // Sets up the Express App
 const app = express();
