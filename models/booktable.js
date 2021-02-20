@@ -3,7 +3,7 @@ module.exports = (sequelize, DataTypes) => {
       // Giving the Book Table model a name of type STRING
     title: {
      allowNull: false,
-     type: DataTypes.STRING,
+     type: DataTypes.STRING
      },
      author:{
       allowNull: true,
