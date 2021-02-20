@@ -1,25 +1,40 @@
-// Requiring our models and passport as we've configured it
 var db = require("../models");
 
 module.exports = function (app) {
-  app.get("/api/authors", (req, res) => {
-    // Here we add an "include" property to our options in our findAll query
-    // We set the value to an array of the models we want to include in a left outer join
-    // In this case, just db.Post
-    db.Author.findAll({
-      include: [db.Post],
-    }).then((dbAuthor) => res.json(dbAuthor));
+  app.get("/api/books", (req, res) => {
+
+    db.booktable.findAll({}).then((dbbooktable) => res.json(dbbooktable));
   });
 
-  app.get("/api/book/:title", (req, res) => {
-    db.Author.findOne({
+  app.get("/api/books/:title", (req, res) => {
+    db.booktable.findOne({
       where: {
         title: req.params.title,
       },
-      include: [db.Post],
-    }).then((dbAuthor) => res.json(dbAuthor));
+    }).then((dbbooktable) => res.json(dbbooktable));
   });
 };
+
+app.post('/api/books', (req, res) => {
+  db.booktable.create({
+    title: req.body.title,
+    author: req.body.author,
+    user_rating: req.body.user_rating,
+    reading_status: req.body.reading_status,
+    category: req.body.category,
+  }).then((dbbooktable) => res.json(dbbooktable));
+});
+
+app.delete('/api/books/:title', (req, res) => {
+  
+  db.booktable.destroy({
+    where: {
+      title: req.params.title,
+    },
+  }).then((dbbooktable) => res.json(dbbooktable));
+});
+
+
 module.exports = function (app) {};
 
 ///
