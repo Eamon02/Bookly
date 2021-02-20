@@ -32,5 +32,8 @@ module.exports = function (app) {
   app.get("/authors", (req, res) =>
     res.sendFile(path.join(__dirname, "../public/author-manager.html"))
   );
-};
 
+  app.delete("/api/books/:id", async (req, res) => {
+    
+  });
+};

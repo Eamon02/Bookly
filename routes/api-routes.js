@@ -26,6 +26,7 @@ module.exports = function (app) {
   });
 
   app.post("/api/books", (req, res) => {
+   console.log(req.body);
     db.booktable
       .create({
         title: req.body.title,
@@ -41,7 +42,7 @@ module.exports = function (app) {
     db.booktable
       .destroy({
         where: {
-          title: req.params.title,
+          title: req.params.id,
         },
       })
       .then((bookdelete) => res.json(bookdelete));
