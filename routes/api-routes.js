@@ -14,7 +14,7 @@ module.exports = function (app) {
       })
       .then((booktitle) => res.json(booktitle));
   });
-};
+
 
 // app.post('/api/books', (req, res) => {
 //   db.booktable.create({
