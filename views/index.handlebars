@@ -1,4 +1,4 @@
-<table class="highlight">
+{{!-- <table class="highlight">
         <thead>
           <tr>
               <th>Title</th>
@@ -18,4 +18,11 @@
             <td>$0.87</td>
           </tr>
         </tbody>
-      </table>
+      </table> --}}
+
+<ul>
+  potato
+  {{#each books}}
+  <div>{{this.dataValues.title}}</div>
+  {{/each}}
+</ul>
