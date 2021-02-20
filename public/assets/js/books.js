@@ -17,3 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch((err) => console.error(err));
   };
 });
+
+// // A function for deleting a note from the db
+// const deleteBook = (id) => {
+//   return $.ajax({
+//     url: "api/books/" + id,
+//     method: "DELETE",
+//   });
+// };

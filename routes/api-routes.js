@@ -41,7 +41,7 @@ module.exports = function (app) {
     db.booktable
       .destroy({
         where: {
-          title: req.params.title,
+          title: req.params.id,
         },
       })
       .then((bookdelete) => res.json(bookdelete));
