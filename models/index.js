@@ -18,7 +18,7 @@ const db = {};
 const sequelize = new Sequelize(
   process.env.JAWSDB_URL || {
     username: "root",
-    password: "root",
+    password: process.env.DB_PASS,
     database: "bookly_db",
     host: "127.0.0.1",
     dialect: "mysql",
