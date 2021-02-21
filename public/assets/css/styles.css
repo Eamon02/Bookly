@@ -1,16 +1,18 @@
-body {
-  /* align-items: center; */
-  height: 100%;
-  /* overflow: hidden; */
-}
-html {
+html, body {
   height:100%;
+  width: screen;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  color: black;
+  /* overflow: hidden; */
 }
 canvas {
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
+  /* max-width: screen !important; */
 }
 .title-box {
   margin: 30px;
@@ -34,12 +36,12 @@ canvas {
   border-radius: 10%;
 } */
 #mainCard{
+  max-height: 400px;
   margin-top: 0px;
   border-radius: 10px;
   background: rgb(163, 163, 163);
   border: 1.5px solid #80deea;
-  overflow:auto;
-  max-height: fit-content;
+  overflow: auto;
 }
 #modal1{
   /* border-color: none;
@@ -58,4 +60,8 @@ canvas {
 .page-footer{
   background: rgb(163, 163, 163) !important;
   border: 1.5px solid #80deea;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
