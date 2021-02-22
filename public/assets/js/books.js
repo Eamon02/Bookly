@@ -23,12 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
       method: "POST",
       data: bookData,
     })
-    .then(response =>{
-      console.log(response);
-    })
-    .catch((err) => console.error(err));
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((err) => console.error(err));
   };
-  $("#addBtn").on("click", async e => {
+  $("#addBtn").on("click", async (e) => {
     e.preventDefault();
     const bookData = {
       title: $("#booktitle").val(),
@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.reload();
   });
 });
-
 
 // A function for deleting a note from the db
 // const deleteBook = (id) => {
