@@ -19,7 +19,12 @@ Stand alone application for the aspired reader that would liket to keep track of
 ​
 This app is deployed on heroku.
 
-​
+To install this application use the following steps:
+
+1. git clone https://github.com/Eamon02/Bookly.git
+2. cd Bookly/
+3. npm install
+4. to enter your MySql password in the .env file
 ​
 ## Usage 
 ​
@@ -50,7 +55,7 @@ Github user name: [Eamon02](https://github.com/Eamon02)
 Contact email: [n/a](mailto:n/a)
 
 ## Image of the Webpage
-[Screenshot of the Bookly App](public\assets\images\Bookly.png)
+![Screenshot of the Bookly App](./public/assets/images/Bookly.png)
 ​
 ## License
 ​
