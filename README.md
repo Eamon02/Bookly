@@ -17,7 +17,8 @@ Stand alone application for the aspired reader that would liket to keep track of
 ​
 ## Installation
 ​
-This app is deployed on heroku
+This app is deployed on heroku.
+
 ​
 ​
 ## Usage 
@@ -29,7 +30,7 @@ Store all the books are you are reading have read or will want to read. The app 
 ​
 It keeps track of category and user rating as well the above mentioned reader status. 
 ​
-The reader the easily keep a record of his/her progress.
+The reader can easily keep a record of his/her progress.
 ​
 ​
 ## Contributing
@@ -47,6 +48,9 @@ Simply launch
 Github user name: [Eamon02](https://github.com/Eamon02)
 ​
 Contact email: [n/a](mailto:n/a)
+
+## Image of the Webpage
+[Screenshot of the Bookly App](public\assets\images\Bookly.png)
 ​
 ## License
 ​
