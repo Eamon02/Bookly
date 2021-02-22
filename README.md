@@ -55,7 +55,7 @@ Github user name: [Eamon02](https://github.com/Eamon02)
 Contact email: [n/a](mailto:n/a)
 
 ## Image of the Webpage
-[Screenshot of the Bookly App](public\assets\images\Bookly.png)
+![Screenshot of the Bookly App](./public/assets/images/Bookly.png)
 ​
 ## License
 ​
