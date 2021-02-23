@@ -36,17 +36,19 @@ canvas {
   cursor: pointer;
   border-radius: 10%;
 } */
-#mainCard {
-  max-height: 400px;
-  margin-top: 0px;
+#mainCard{
+  position: absolute;
+  height: 55%;
+  margin-top: 0px !important;
   border-radius: 10px;
   background: rgb(163, 163, 163);
   border: 1.5px solid #80deea;
   overflow: auto;
 }
-#modal1 {
-  /* border-color: none;
-  background: rgb(163, 163, 163) !important; */
+#modal1{
+  color: white !important;
+  border: 1.5px solid #80deea;
+  background: rgb(163, 163, 163) !important;
   /* border: 1.5px solid #80deea !important; */
 }
 .collection {

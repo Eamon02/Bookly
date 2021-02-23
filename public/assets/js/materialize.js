@@ -3,5 +3,9 @@ $(".dropdownTrigger").dropdown();
 
 // Modal
 $(document).ready(function () {
-  $(".modal").modal();
+  $(".modal").modal({
+    inDuration: "600",
+    outDuration: "600",
+    opacity: ".5"
+  });
 });
