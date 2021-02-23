@@ -15,6 +15,7 @@ function init() {
   renderer = new THREE.WebGLRenderer();
   renderer.setSize(window.innerWidth, window.innerHeight);
   document.body.appendChild(renderer.domElement);
+  // document.$("modal1").appendChild(renderer.domElement);
 
   pageGeo = new THREE.Geometry();
   for (let i = 0; i < 1000; i++) {
