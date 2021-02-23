@@ -1,9 +1,10 @@
-html, body {
-  height:100%;
+html,
+body {
+  height: 100%;
   width: screen;
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
   color: black;
   /* overflow: hidden; */
 }
@@ -54,12 +55,12 @@ canvas {
   /* border-radius: 10px !important;
   background: rgb(163, 163, 163) !important; */
 }
-.collection-item{
+.collection-item {
   /* border-color: none;
   border-radius: 10px;
   background: rgb(163, 163, 163) !important; */
 }
-.page-footer{
+.page-footer {
   background: rgb(163, 163, 163) !important;
   border: 1.5px solid #80deea;
   position: absolute;
