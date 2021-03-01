@@ -3,7 +3,9 @@
 # BOOKLY
 ​
 ## Description 
-Stand alone application for the aspired reader that would liket to keep track of their reading history. 
+Stand alone application for the aspired reader that would like to keep track of their reading history. 
+
+[Link to Heroku App](https://boookly.herokuapp.com/)
 ​
 ## Table of Contents
 ​
