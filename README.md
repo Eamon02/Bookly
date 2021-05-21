@@ -23,10 +23,19 @@ This app is deployed on heroku.
 
 To install this application use the following steps:
 
-1. git clone https://github.com/Eamon02/Bookly.git
-2. cd Bookly/
-3. npm install
-4. to enter your MySql password in the .env file
+HTTPS:
+```
+$ git clone https://github.com/Eamon02/Bookly.git
+```
+SSH:
+```
+$ git clone git@github.com:Eamon02/Bookly.git
+```
+Once cloned, cd into the repository and install the necessary dependencies by running:
+```
+$ npm install
+```
+Next, enter your MySql password in the .env file
 ​
 ## Usage 
 ​
